@@ -1,27 +1,28 @@
 <template>
     <div>
         <b-navbar toggleable="lg" type="light" variant="light">
-            <b-navbar-brand href="#">BLOOM</b-navbar-brand>
+            <b-navbar-brand href="#">
+                    <img src="/img/bloom_logo.png" class="logo">
+            </b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
-                    <b-nav-item href="#" class="border-left">Home</b-nav-item>
                     <b-nav-item href="#" class="border-left"
                         >Customer</b-nav-item
                     >
-                    <b-nav-item href="#" class="border-left"
-                        >Product</b-nav-item
+                    <b-nav-item href="/sales" class="border-left"
+                        >Sales</b-nav-item
                     >
-                    <b-nav-item href="#" class="border-left"
-                        >Placeholder</b-nav-item
+                    <b-nav-item href="/customerservice" class="border-left"
+                        >Customer Service</b-nav-item
                     >
-                    <b-nav-item href="#" class="border-left"
-                        >Placeholder</b-nav-item
+                    <b-nav-item href="/marketing-automation" class="border-left"
+                        >Marketing Automation</b-nav-item
                     >
-                    <b-nav-item href="#" class="border-left"
-                        >Placeholder</b-nav-item
+                    <b-nav-item href="/analytics" class="border-left"
+                        >Analytics</b-nav-item
                     >
                 </b-navbar-nav>
 
@@ -52,7 +53,13 @@
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+    .logo {
+        width: auto;
+        height: 80px;
+        margin-right: 0 !important;
+    }
+</style>
 
 <script>
 export default {
