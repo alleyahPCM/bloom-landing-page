@@ -1,9 +1,5 @@
 <template>
     <div class="marketing-page">
-        <div>
-            <NavBar />
-        </div>
-
         <div class="container">
             <form>
                 <div class="form-group">
@@ -75,11 +71,11 @@
 </template>
 
 <script>
-import NavBar from "../components/NavBar.vue";
+import navbar from "../components/navbar.vue";
 export default {
     name: "MarketingAutomation",
     components: {
-        NavBar,
+        navbar,
     },
 };
 </script>

@@ -1,8 +1,5 @@
 <template>
     <div class="index-page">
-        <div>
-            <nav-bar></nav-bar>
-        </div>
         <!-- Image section -->
         <section class="image-section">
             <div>
@@ -204,11 +201,11 @@
     </div>
 </template>
 <script>
-import navBar from "../components/NavBar.vue";
+import navbarAlt from "../components/navbarAlt.vue";
 
 export default {
     components: {
-        navBar,
+        navbarAlt,
     },
 };
 </script>
