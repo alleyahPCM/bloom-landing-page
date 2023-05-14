@@ -1,6 +1,6 @@
 <template>
     <b-container fluid="sm" class="text-center welcome-container bv-example-row">
-             <b-row class="landing-page-content">
+            <b-row class="landing-page-content">
                 <b-row class="inner-row">
                     <h1>Welcome to Bloom</h1>
                     <br>
@@ -14,28 +14,20 @@
                 </b-row>
             </b-row>
             <b-row class="footer">
-                <div class="links">
-                    <a href="#">Privacy Policy</a> 
-                    <span> | </span>
-                    <a href="#">Safe Guarding Statement</a> 
-                    <span> | </span>
-                    <a href="/about">About</a>
-                    <span> | </span>
-                    <a href="/contactUs">Contact Us</a>
-                </div>
-
-                <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin, est quis porta consequat, sem nisi 
-                    pulvinar lorem, at ornare lorem eros id sapien. Ut enim lacus, egestas eu egestas et, auctor eget libero. 
-                    Quisque et urna velit. Maecenas est arcu, dapibus ut risus in, posuere tempus arcu.</p>
+                <footerT></footerT>
             </b-row>  
     </b-container>
 </template>
 
 <script>
+import footerT from "../components/footer.vue";
     export default {
         name: "Welcome",
         mounted() {
             console.log("Welcome mounted.");
+        },
+        components: {
+            footerT,
         },
     };
 </script>
@@ -61,24 +53,6 @@
         height: 100vh; 
         display: flex;
         flex-direction: column;
-    }
-
-    .footer {
-        background-color: #86A760;
-        bottom: 0;
-        padding: 10px;
-        flex:none;
-        font-size: 16px;  
-    }
-
-    .footer a, .footer a:hover, .footer span {
-        color: #4D4114;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .footer p {
-        color: #4D4114;
     }
     
     .landing-page-content {

@@ -19,6 +19,7 @@ import "bootstrap-vue-3/dist/bootstrap-vue-3.css";
 import campaigns from "./components/campaigns.vue";
 import navbar from "./components/navbar.vue";
 import navbarAlt from "./components/navbarAlt.vue";
+import footerT from "./components/footer.vue";
 import PaymentComponent from "./components/PaymentComponent.vue";
 import analyticsNav from "./components/analyticsNav.vue";
 import analyticsSideBar from "./components/analyticsSideBar.vue";
@@ -39,6 +40,7 @@ app.component("marketing-automation-component", marketingAutomation)
     .component("campaigns-component", campaigns)
     .component("navbar-component", navbar)
     .component("navbar-alt-component", navbarAlt)
+    .component("footer-component", footerT)
     .component("sales-component", sales)
     .component("welcome-component", welcome)
     .component("about-component", about)

@@ -21,7 +21,7 @@
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
-                <b-navbar-nav class="ml-auto">
+                <b-navbar-nav class="ml-auto ms-auto">
                     <b-nav-form>
                         <b-button size="sm" class="my-2 my-sm-0 navbar-btn">BLOOM</b-button>
                     </b-nav-form>
